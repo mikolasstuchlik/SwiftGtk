@@ -6,9 +6,9 @@ let package = Package(
     name: "Gtk",
     products: [ .library(name: "Gtk", targets: ["Gtk"]) ],
     dependencies: [
-        .package(name: "gir2swift", url: "https://github.com/rhx/gir2swift.git", .branch("main")),
-        .package(name: "Atk", url: "https://github.com/rhx/SwiftAtk.git", .branch("main")),
-        .package(name: "Gdk", url: "https://github.com/rhx/SwiftGdk.git", .branch("main")),
+        .package(name: "gir2swift", url: "https://github.com/mikolasstuchlik/gir2swift.git", .branch("main")),
+        .package(name: "Atk", url: "https://github.com/mikolasstuchlik/SwiftAtk.git", .branch("main")),
+        .package(name: "Gdk", url: "https://github.com/mikolasstuchlik/SwiftGdk.git", .branch("main")),
     ],
     targets: [
 	.systemLibrary(name: "CGtk", pkgConfig: "gtk+-3.0",
